@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados - INNOVA TRIVIA 360</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Resultados Finales</h2>
+      <p id="finalScore"></p>
+      <canvas id="resultChart"></canvas>
+      <p id="summary"></p>
+      <div class="buttons">
+        <button onclick="window.location='game.html'">Jugar de nuevo</button>
+        <button onclick="window.location='/'">Salida</button>
+      </div>
+    </div>
+  </div>
+  <audio id="clickSound" src="sounds/click.mp3"></audio>
+  <script src="js/results.js"></script>
+</body>
+</html>

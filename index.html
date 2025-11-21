@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INNOVA TRIVIA 360</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="images/logo.jpg" alt="Logo" class="logo">
+      <div id="registro">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <button id="registrar">Inicio</button>
+      </div>
+
+      <div id="menu" class="hidden">
+        <h2 id="saludo"></h2>
+        <button id="btnJugar">Jugar</button>
+        <button id="btnInstrucciones">Instrucciones</button>
+        <button id="btnYoutube">YouTube</button>
+      </div>
+
+      <div id="instrucciones" class="hidden">
+        <h3>Instrucciones</h3>
+    <p><strong>Objetivo:</strong> Acierta las 12 preguntas del enfoque STEAM-H.</p>
+    <p><strong>Tiempo límite:</strong> Dispones de 20 segundos para cada pregunta.</p>
+    <p><strong>Penalización por tiempo:</strong> Si el contador llega a 0, el intento se considera incorrecto.</p>
+    <p><strong>Puntuación:</strong></p>
+    <p><strong>Acierto:</strong> +10pts.</p>
+    <p><strong>Error:</strong> -05pts.</p>
+    <p><strong>Descuento de aciertos:</strong> Por cada 10 puntos negativos acumulados, se anulará (descontará) un acierto total.</p>
+    <p><strong>¡Suerte!</strong> :)</p>
+        <button id="btnCerrarInstrucciones">Volver al menú</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="sounds/click.mp3"></audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
