@@ -1,0 +1,9 @@
+# Reglas de cacheo para archivos estáticos (CSS, JS, Imagenes, Sonidos)
+# Este setting es para optimización de rendimiento y ahorro de ancho de banda.
+headers:
+  - source: '**/*.{css,js,png,jpg,mp3,html}' # Aplica a todos los archivos relevantes en cualquier subcarpeta
+    headers:
+      # Max-Age: 1 año (31,536,000 segundos). Le dice al navegador que no pida estos archivos por 1 año.
+      # Immutable: Le dice al navegador que el archivo NUNCA cambiará (aunque sí lo actualizaremos si editamos).
+      - key: Cache-Control
+        value: "public, max-age=31536000, immutable"
