@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #02121f 0%, #000 100%);
+  color: #e0f7ff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background: rgba(0, 25, 40, 0.95);
+  border: 2px solid #00ffc8;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 25px #00ffc8;
+  width: 90%;
+  max-width: 420px;
+  animation: fadeIn 0.8s;
+
+  /* CAMBIO CLAVE 1: Permite posicionar elementos internos con 'absolute' */
+  position: relative;
+  /* CAMBIO CLAVE 2: Dar más espacio en la parte superior para el contador */
+  padding-top: 80px;
+}
+
+.logo {
+  width: 230px;
+  margin-bottom: 30px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px #00ffc8);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid #00ffc8;
+  border-radius: 10px;
+  background: #012d2e;
+  color: #e0f7ff;
+}
+
+button {
+  background: #013b40;
+  color: #00ffc8;
+  border: 2px solid #00ffc8;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ffc8;
+  color: #012d2e;
+  box-shadow: 0 0 20px #00ffc8, 0 0 40px #00ffc8;
+  transform: scale(1.05);
+}
+
+.hidden { display: none; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#options button {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+text-align: center;
+min-height: 55px;
+white-space: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* --- ESTILOS PARA EL CONTADOR DENTRO DEL CARD --- */
+
+#timer-box-wrapper {
+/* POSICIONAMIENTO DENTRO DEL CARD */
+position: absolute;
+top: 20px;
+right: 20px;
+
+/* Estilos de la caja */
+background: rgba(0, 25, 40, 0.95); /* Fondo oscuro de la tarjeta */
+border: 3px solid #00ffc8; /* Borde del color de acento */
+border-radius: 15px;
+padding: 5px 15px;
+box-shadow: 0 0 15px rgba(0, 255, 200, 0.8);
+z-index: 10;
+min-width: 80px;
+text-align: center;
+}
+
+#timer {
+font-size: 2.5em; /* Contador más grande */
+font-weight: bold;
+margin: 0;
+color: #00ffc8; /* Color de acento por defecto */
+transition: all 0.3s ease-in-out;
+}
+
+/* Animación y Estilo de Advertencia (Rojo y Parpadeo) */
+.warning-blink {
+  color: #ff3b3b !important; /* Rojo */
+  border-color: #ff3b3b !important; /* Borde Rojo */
+  box-shadow: 0 0 20px rgba(255, 59, 59, 0.9) !important; /* Sombra Roja */
+
+  /* Animación de parpadeo */
+  animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
