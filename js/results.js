@@ -1,4 +1,4 @@
-const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyVXempkgX9Rgnn8yfG1_f5Zg3tYTTwrs6hINrr8jiFUi2zv61OpaFmMPMOAUPqu4I/exec"; // ¡URL DE GOOGLE SHEETS ACTUALIZADA!
+const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxtRUt6Wq9VWbLmdFUSZ0tm1_JeRjYbGfvfcjmGKspMaEdN_cDxpdUmwfZp7RlJJTE/exec"; // ¡URL DE GOOGLE SHEETS ACTUALIZADA!
 
 // Obtener nombre y apellido
 const nombre = localStorage.getItem("nombreJugador") || "";
