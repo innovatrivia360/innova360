@@ -124,7 +124,7 @@ function checkAnswer(selected) {
 
 function resetTimer() {
   clearInterval(timer);
-  timeLeft = 20; 
+  timeLeft = 15; 
   timerDisplay.textContent = timeLeft;
 
   timerBox.classList.remove("warning-blink");
