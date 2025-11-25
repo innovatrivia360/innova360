@@ -15,7 +15,7 @@ let score = 0;
 let correctCount = 0; // Contador de aciertos brutos para la deducción
 let incorrectCount = 0; // Contador de errores brutos
 let timer;
-let timeLeft = 20; // AJUSTADO A 20 SEGUNDOS
+let timeLeft = 15; // AJUSTADO A 15 SEGUNDOS
 
 const nombreJugador = localStorage.getItem("nombreJugador");
 playerName.textContent = nombreJugador ? `Jugador: ${nombreJugador}` : "";
