@@ -55,5 +55,5 @@ btnJugar.addEventListener("click", () => {
 // ✅ Enlace actualizado a tu YouTube correcto
 btnYoutube.addEventListener("click", () => {
   playClick();
-  window.open("https://youtube.com/watch?v=CZDsCoPLUj4&si=PP9C7kYSoBWqbiWR", "_blank");
+  window.open("https://www.youtube.com/watch?feature=shared&v=e93W7jrC1J4", "_blank");
 });
