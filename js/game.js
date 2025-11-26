@@ -32,7 +32,13 @@ function startGame() {
   current = 0;
   score = 0;
   correctCount = 0;
-  incorrectCount = 0; 
+  incorrectCount = 0;
+  // SOLUCIÓN PARA EL BEEP
+  try {
+      clickSound.volume = 0;
+      clickSound.play();
+      clickSound.volume = 1;
+  } catch(e) { /* No pasa nada si falla */ }
   showQuestion();
 }
 
